@@ -1,2 +1,2 @@
-# AIX-DL-2025-2
+# AI:X Deep Learning 2025-2
 AI+X: 딥러닝 2025-2 기말 프로젝트
