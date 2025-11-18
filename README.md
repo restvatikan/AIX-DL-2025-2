@@ -9,9 +9,9 @@ AI+X: 딥러닝 2025-2 기말 프로젝트
 -----
 # 한국어 영화 리뷰 감성 분석 : 머신러닝과 딥러닝 모델 성능 비교 및 개선
 
-본 프로젝트는 대표적인 한국어 감성 분석 데이터셋인 \*\*NSMC(Naver Sentiment Movie Corpus)\*\*를 활용하여, 다양한 머신러닝(ML) 및 딥러닝(DL) 방법론을 적용하고 그 성능을 비교 분석합니다.
+본 프로젝트는 대표적인 한국어 감성 분석 데이터셋인 **NSMC(Naver Sentiment Movie Corpus)**를 활용하여, 다양한 머신러닝(ML) 및 딥러닝(DL) 방법론을 적용하고 그 성능을 비교 분석합니다.
 
-궁극적인 목표는 각 모델의 특성을 이해하고, 성능 개선 시도를 통해 한국어 텍스트 처리에 대한 실질적인 인사이트를 도출하는 것입니다. 모든 코드는 \*\*Jupyter Notebook(.ipynb)\*\*으로 작성되어 손쉬운 재현(Reproducibility)을 목표로 하고 있습니다.
+궁극적인 목표는 각 모델의 특성을 이해하고, 성능 개선 시도를 통해 한국어 텍스트 처리에 대한 실질적인 인사이트를 도출하는 것입니다. 모든 코드는 **Jupyter Notebook(.ipynb)**으로 작성되어 손쉬운 재현(Reproducibility)을 목표로 하고 있습니다.
 
 -----
 
@@ -118,7 +118,7 @@ AI+X: 딥러닝 2025-2 기말 프로젝트
   * **1D CNN (Convolutional Neural Network):**
       * 텍스트의 지역적 특징(Local Feature)을 추출하는 데 효과적입니다. (예: "정말 재밌")
       * 합성곱 필터(Filter)가 텍스트를 스캔하며 특징 맵(Feature Map)을 생성하고, 이를 풀링(Pooling)하여 최종적으로 감성을 분류합니다.
-      * 
+        
 ### 5.4. 앙상블 (Ensemble) 기법
 
 여러 개의 기본 모델(Base Models)을 결합하여 단일 모델보다 강력한 성능을 도출합니다.
@@ -132,13 +132,13 @@ AI+X: 딥러닝 2025-2 기말 프로젝트
 
 ### 6.1. 평가 지표
 
-본 데이터셋은 레이블(0, 1)이 비교적 균형 잡혀 있으므로, \*\*정확도(Accuracy)\*\*를 메인 지표로 사용합니다.
+본 데이터셋은 레이블(0, 1)이 비교적 균형 잡혀 있으므로, **정확도(Accuracy)**를 메인 지표로 사용합니다.
 
 $$\text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)}}{\text{Total Data}}$$
 
 ### 6.2. 모델별 성능 비교
 
-`ratings_test.txt` (50,000개)에 대한 최종 성능 비교표입니다. (성능 수치는 예시이며, 실제 프로젝트 수행 시 채워 넣어야 합니다.)
+`ratings_test.txt` (50,000개)에 대한 최종 성능 비교표입니다. (아래 표는 아직 placeholder입니다다)
 
 | 모델 (Model) | 특성 추출 (Feature Extraction) | 정확도 (Accuracy) | F1-Score | 비고 (Notes) |
 | :--- | :--- | :---: | :---: | :--- |
@@ -196,9 +196,7 @@ $$\text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)
     ```bash
     pip install -r requirements.txt
     ```
-
-    *Note: Colab에서는 대부분의 라이브러리가 기본 설치되어 있습니다.*
-
+    
 4.  **노트북 순차 실행:**
 
       * `notebooks/` 디렉토리의 Jupyter Notebook을 **1번부터 4번까지** 순서대로 실행합니다.
