@@ -9,9 +9,9 @@ AI+X: 딥러닝 2025-2 기말 프로젝트
 -----
 # 한국어 영화 리뷰 감성 분석 : 머신러닝과 딥러닝 모델 성능 비교 및 개선
 
-본 프로젝트는 대표적인 한국어 감성 분석 데이터셋인 **NSMC(Naver Sentiment Movie Corpus)**를 활용하여, 다양한 머신러닝(ML) 및 딥러닝(DL) 방법론을 적용하고 그 성능을 비교 분석합니다.
+본 프로젝트는 대표적인 한국어 감성 분석 데이터셋인 **NSMC(Naver Sentiment Movie Corpus)** 를 활용하여, 다양한 머신러닝(ML) 및 딥러닝(DL) 방법론을 적용하고 그 성능을 비교 분석합니다.
 
-궁극적인 목표는 각 모델의 특성을 이해하고, 성능 개선 시도를 통해 한국어 텍스트 처리에 대한 실질적인 인사이트를 도출하는 것입니다. 모든 코드는 **Jupyter Notebook(.ipynb)**으로 작성되어 손쉬운 재현(Reproducibility)을 목표로 하고 있습니다.
+궁극적인 목표는 각 모델의 특성을 이해하고, 성능 개선 시도를 통해 한국어 텍스트 처리에 대한 실질적인 인사이트를 도출하는 것입니다. 모든 코드는 **Jupyter Notebook(.ipynb)** 으로 작성되어 손쉬운 재현(Reproducibility)을 목표로 하고 있습니다.
 
 -----
 
@@ -132,7 +132,7 @@ AI+X: 딥러닝 2025-2 기말 프로젝트
 
 ### 6.1. 평가 지표
 
-본 데이터셋은 레이블(0, 1)이 비교적 균형 잡혀 있으므로, **정확도(Accuracy)**를 메인 지표로 사용합니다.
+본 데이터셋은 레이블(0, 1)이 비교적 균형 잡혀 있으므로, **정확도(Accuracy)** 를 메인 지표로 사용합니다.
 
 $$\text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)}}{\text{Total Data}}$$
 
@@ -178,7 +178,7 @@ $$\text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)
 
 ## 9\. 프로젝트 실행 방법
 
-본 프로젝트는 Google Colab 환경에서 가장 쉽게 재현할 수 있습니다.
+본 프로젝트는 Google Colab 환경에서 쉽게 재현할 수 있습니다.
 
 1.  **Repository 클론:**
 
