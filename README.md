@@ -71,7 +71,7 @@
 * **실험 환경 (Experimental Environment):**
   - **플랫폼:** Google Colab (GPU T4 런타임)
   - **Python 버전:** Python 3.12.12
-  - **주요 라이브러리:** `scikit-learn`, `konlpy`, `gensim`, `jamo`, `torch`, `pandas`, `numpy`, `matplotlib`, `tqdm`
+  - **주요 라이브러리:** `scikit-learn`, `konlpy`, `gensim`, `jamo`, `torch`, `pandas`, `numpy`, `matplotlib`, `seaborn`, `tqdm`
   - **라이브러리 설치 방법:** 본 프로젝트는 단일 `.ipynb` 환경에서 수행할 예정입니다. 비교적 큰 데이터셋을 다루는 실험이기 때문에, KoNLPy의 Okt.morphs 대신 **Mecab** 형태소 분석기를 사용하며, 필요한 라이브러리 설치 코드는 아래와 같습니다.
 
   ```python
@@ -81,7 +81,7 @@
 
   # 2. 공통 라이브러리 설치
   # jamo: 자소 분리 / gensim: Word2Vec / torch: 딥러닝
-  !pip install jamo gensim torch scikit-learn pandas numpy matplotlib tqdm
+  !pip install jamo gensim torch scikit-learn pandas numpy matplotlib seaborn tqdm
   ```
 
 -----
