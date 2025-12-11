@@ -201,7 +201,7 @@
 *   **분석 결과:** 부정(0)이 **50.1%**, 긍정(1)이 **49.9%** 로 완벽에 가까운 균형을 이루고 있음을 확인했습니다.
 *   **결론:** 별도의 **오버샘플링(Oversampling)** 이나 **언더샘플링** 기법을 적용할 필요가 없다고 판단했습니다.
 
-<img src="https://raw.githubusercontent.com/restvatikan/ai-x_dl-temp/main/Code+Result/data_label_distribution.png" width="80%" alt="Data Label Distribution">
+<img alt="data_label_distribution.png" src="https://github.com/restvatikan/AIX-DL-2025-2/blob/main/images/data_label_distribution.png?raw=true" data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
 
 ### Step 2: 리뷰 길이 분석 (Length Analysis)
 > **분석 목적:** 적절한 패딩(Padding) 길이 설정 및 데이터 특성 파악
@@ -209,7 +209,7 @@
 *   **라벨별 비교:** 긍정 리뷰와 부정 리뷰 간의 길이 차이는 통계적으로 유의미하게 나타나지 않았습니다.
 *   **전처리 전략:** 딥러닝 모델의 `max_len` 설정 시 **140자**를 기준으로 하되, 패딩을 통해 길이를 맞추는 전략이 유효함을 확인했습니다.
 
-<img src="https://raw.githubusercontent.com/restvatikan/ai-x_dl-temp/main/Code+Result/data_length_distribution.png" width="80%" alt="Data Length Distribution">
+<img alt="data_length_distribution.png" src="https://github.com/restvatikan/AIX-DL-2025-2/blob/main/images/data_length_distribution.png?raw=true" data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
 
 ### Step 3: WordCloud 및 도메인 불용어 식별
 > **분석 목적:** 감성 분류 결정 단어 식별 및 노이즈(Noise) 제거
@@ -221,10 +221,10 @@
 *   **결론:** EDA 전처리 파이프라인에서 해당 단어들을 제거하여 모델이 실제 감성 어휘에 집중하도록 유도했습니다.
 
 **[부정(Negative) 리뷰 주요 단어]**
-<img src="https://raw.githubusercontent.com/restvatikan/ai-x_dl-temp/main/Code+Result/word_label_0.png" width="80%" alt="Negative Word Cloud">
+<img alt="word_label_0.png" src="https://github.com/restvatikan/AIX-DL-2025-2/blob/main/images/word_label_0.png?raw=true" data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
 
 **[긍정(Positive) 리뷰 주요 단어]**
-<img src="https://raw.githubusercontent.com/restvatikan/ai-x_dl-temp/main/Code+Result/word_label_1.png" width="80%" alt="Positive Word Cloud">
+<img alt="word_label_1.png" src="https://github.com/restvatikan/AIX-DL-2025-2/blob/main/images/word_label_1.png?raw=true" data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
 
 **이후, 모델과 실험 목적에 따라 총 4가지의 상이한 전처리 파이프라인을 적용했습니다.**
 
@@ -318,11 +318,11 @@
 
 
 ### 성능 비교 그래프
-<img src="https://raw.githubusercontent.com/restvatikan/ai-x_dl-temp/main/Code+Result/model_accuracy_comparison2.png" width="80%" alt="Model Performance Comparison">
+<img alt="model_accuracy_comparison.png" src="https://github.com/restvatikan/AIX-DL-2025-2/blob/main/images/model_accuracy_comparison.png?raw=true" data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
 
 ### 혼동 행렬 (Confusion Matrix) 시각화
 상위 모델들은 긍정(1)과 부정(0)을 균형 있게 예측한 반면, 하위 모델(특히 Decision Tree Raw)은 특정 클래스로 예측이 편향되는 경향을 보였습니다.
-<img src="https://raw.githubusercontent.com/restvatikan/ai-x_dl-temp/main/Code+Result/confusion_matrices2.png" width="80%" alt="Confusion Matrices">
+<img alt="confusion_matrices.png" src="https://github.com/restvatikan/AIX-DL-2025-2/blob/main/images/confusion_matrices.png?raw=true" data-hpc="true" class="Box-sc-62in7e-0 eLrlvS">
 
 *(실험 코드 실행 시 `model_accuracy_comparison.png` 및 `confusion_matrices.png` 파일이 생성됩니다.)*
 
